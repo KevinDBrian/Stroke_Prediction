@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stroke Risk Predictor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <form style="text-align: center;">
+        <h1>Stroke Prediciton</h1>
+        <h2>Based on a few moments of your time and some quesitons, see if your at risk of a stroke</h2> 
+        </form>
+
+        <form name="form", method="POST", style="text-align: right;">
+            <br>
+            Age: <input type="number" name="age", placeholder="Enter age in years" required/>
+            <br><br>
+            Body Mass Index (BMI): <input type="number" name="bmi", placeholder="Enter BMI" required/>
+            <br><br>
+            <button value="Submit">Predict</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
